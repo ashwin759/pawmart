@@ -1,0 +1,312 @@
+# Prompt: Light Mode Redesign + Mobile Optimization (Professional & Commercial UI)
+
+## Objective
+
+Upgrade the **Light Mode UI** to a **rich, modern, and visually appealing commercial design**, and ensure the entire application is **fully optimized for mobile devices**.
+
+The UI must feel:
+
+• clean and premium
+• vibrant but balanced
+• easy to read
+• responsive on all devices
+• consistent across all components
+
+---
+
+# 1. Light Mode Design Direction
+
+Redesign the light theme to avoid a dull or flat look.
+
+Use:
+
+• soft layered backgrounds
+• subtle color variations
+• premium spacing
+• modern shadows
+
+Avoid:
+
+• plain white everywhere
+• low contrast text
+• overly bright or childish colors
+
+---
+
+# 2. Professional Light Mode Color Palette
+
+## Background
+
+Primary Background
+#F8FAFC
+
+Secondary Background
+#F1F5F9
+
+Section Highlight
+#EEF2FF
+
+---
+
+## Cards & Surfaces
+
+Card Background
+#FFFFFF
+
+Hover Surface
+#F9FAFB
+
+Border
+#E2E8F0
+
+---
+
+## Text Optimization
+
+Primary Text
+#0F172A
+
+Secondary Text
+#475569
+
+Muted Text
+#64748B
+
+Ensure strong contrast for readability.
+
+---
+
+## Accent Colors
+
+Primary Accent (Green)
+#22C55E
+
+Secondary Accents
+
+Blue → #3B82F6
+Coral → #FB7185
+Orange → #F97316
+Yellow → #FACC15
+
+Use accents for:
+
+• buttons
+• highlights
+• tags
+• icons
+
+---
+
+# 3. Typography Optimization
+
+Use modern and readable fonts.
+
+Headings
+Poppins
+
+Body
+Inter
+
+---
+
+## Typography Rules
+
+• Increase heading size for hierarchy
+• Use medium weight for titles
+• Maintain proper line spacing
+• Avoid small or faint text
+
+---
+
+# 4. Layout Improvements (Light Mode)
+
+Improve structure to avoid AI-template feel.
+
+Apply:
+
+• better spacing between sections
+• varied section backgrounds
+• clear visual separation
+• consistent alignment
+
+Use grid layouts properly.
+
+---
+
+# 5. Card Design Enhancement
+
+Cards must look premium.
+
+Apply:
+
+• rounded corners (12–16px)
+• soft shadow
+• clean spacing
+• hover elevation
+
+Hover:
+
+• slight lift
+• subtle shadow increase
+
+---
+
+# 6. Button Styling
+
+Primary Button:
+
+• vibrant green
+• slightly bold text
+• rounded corners
+
+Hover:
+
+• brightness increase
+• slight lift
+
+Secondary Button:
+
+• outlined style
+• subtle hover background
+
+---
+
+# 7. Navigation Bar Optimization
+
+Navbar must feel modern.
+
+Light Mode:
+
+• white or slightly tinted background
+• soft shadow
+• clean spacing
+
+Include:
+
+• logo
+• search
+• categories
+• theme toggle
+• profile
+
+---
+
+# 8. Form & Input Optimization
+
+Inputs must be clean and readable.
+
+Background
+#FFFFFF
+
+Border
+#E2E8F0
+
+Focus:
+
+• border turns green
+• subtle glow
+
+Text must be clear and readable.
+
+---
+
+# 9. Mobile Optimization (VERY IMPORTANT)
+
+The entire UI must be fully responsive.
+
+---
+
+## Layout Rules
+
+Desktop:
+
+• 3–4 columns grid
+
+Tablet:
+
+• 2 columns
+
+Mobile:
+
+• 1 column
+
+---
+
+## Mobile Navigation
+
+Implement:
+
+• hamburger menu
+• collapsible navigation
+• sticky bottom or top navigation
+
+---
+
+## Mobile UI Adjustments
+
+• increase touch target size (min 44px)
+• reduce padding where needed
+• stack elements vertically
+• optimize image sizes
+
+---
+
+## Typography for Mobile
+
+• slightly larger text
+• better spacing
+• readable buttons
+
+---
+
+## Card Optimization (Mobile)
+
+Cards must:
+
+• take full width
+• have proper spacing
+• keep consistent layout
+
+---
+
+# 10. Image Optimization
+
+Ensure images load efficiently.
+
+• use responsive sizes
+• lazy loading
+• maintain quality
+
+---
+
+# 11. Performance Optimization
+
+• minimize reflows
+• optimize CSS
+• compress assets
+• ensure smooth scrolling
+
+---
+
+# 12. Consistency Across Modes
+
+Ensure Light Mode and Dark Mode:
+
+• share same layout
+• use consistent spacing
+• maintain readable contrast
+
+---
+
+# Expected Final Result
+
+After implementation:
+
+• Light mode looks **rich and premium**
+• UI feels **modern and commercial**
+• text is highly readable
+• layout is clean and structured
+• mobile experience is smooth and professional
+• no AI-template feel
+
+The platform should look like a **real production-ready marketplace on both desktop and mobile**.

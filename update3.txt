@@ -1,0 +1,268 @@
+# Prompt: Professional Loading Bar + System-Wide Loading Animations (Light & Dark Mode Optimized)
+
+## Objective
+
+Implement a **rich, professional loading system** across the Pet Marketplace application.
+
+The system must include:
+
+• a **top loading progress bar (like modern web apps)**
+• a **first-time entry loading screen**
+• loading animations in **login page and key actions**
+• consistent behavior across all pages
+• full support for **Light Mode and Dark Mode**
+
+All animations must be **smooth, fast, and non-intrusive**.
+
+---
+
+# 1. Global Top Loading Bar (Primary Feature)
+
+Add a **thin animated loading bar at the top of the page**.
+
+Behavior:
+
+• appears when navigation or API calls start
+• progresses smoothly (not instantly jumping)
+• completes when content is ready
+• disappears with fade-out
+
+---
+
+## Design
+
+Height:
+
+2px – 4px
+
+Style:
+
+• gradient progress bar
+• smooth motion
+
+Light Mode:
+
+background track: #E2E8F0
+progress gradient: linear-gradient(90deg, #22C55E, #3B82F6)
+
+Dark Mode:
+
+background track: #1E293B
+progress gradient: linear-gradient(90deg, #4ADE80, #60A5FA)
+
+---
+
+## Animation Behavior
+
+• starts at ~20% instantly
+• slowly increases to ~80%
+• completes when data loads
+
+Add subtle glow effect.
+
+---
+
+# 2. First-Time Page Load Screen
+
+When the user opens the website for the first time:
+
+Show a **full-screen branded loading screen**.
+
+---
+
+## Design
+
+Center content:
+
+• logo or app name
+• animated loader
+• tagline
+
+Example text:
+
+"Loading your pet experience..."
+
+---
+
+## Animation Options
+
+Choose one:
+
+• animated paw icon
+• circular loader with gradient
+• logo pulse animation
+
+---
+
+## Background
+
+Light Mode:
+
+#F8FAFC
+
+Dark Mode:
+
+#020617
+
+---
+
+## Transition
+
+• fade out smoothly after loading
+• duration: ~400ms
+
+---
+
+# 3. Login Page Loading
+
+When user clicks login:
+
+• disable button
+• show loading spinner inside button
+• prevent multiple clicks
+
+---
+
+## Button Animation
+
+Before:
+
+Login
+
+After click:
+
+[ spinner ] Logging in...
+
+---
+
+## Success:
+
+• smooth redirect
+• optional success animation
+
+---
+
+## Error:
+
+• shake animation (subtle)
+• show error message
+
+---
+
+# 4. Skeleton Loaders (Content Loading)
+
+Replace blank loading states with **skeleton UI**.
+
+---
+
+## Where to Use
+
+• pet listing grid
+• breed details
+• recommendation section
+• admin dashboard
+
+---
+
+## Skeleton Design
+
+• card-shaped placeholders
+• shimmer animation
+• matches actual layout
+
+Light Mode:
+
+#E5E7EB → shimmer
+
+Dark Mode:
+
+#1E293B → shimmer
+
+---
+
+# 5. Section-Level Loading Indicators
+
+For partial updates (like filtering/search):
+
+• show inline loader
+• blur or dim background slightly
+
+Example:
+
+User searches → grid shows loading overlay
+
+---
+
+# 6. Image Loading Animation
+
+When images load:
+
+• show placeholder box
+• fade image in when ready
+
+Optional:
+
+• subtle zoom-in effect
+
+---
+
+# 7. Page Transition Loading
+
+When navigating between pages:
+
+• trigger top loading bar
+• fade content out
+• fade new content in
+
+Avoid abrupt page changes.
+
+---
+
+# 8. Dark Mode Optimization
+
+All loaders must adapt to theme.
+
+Light Mode:
+
+• lighter backgrounds
+• darker loaders
+
+Dark Mode:
+
+• darker backgrounds
+• brighter glowing loaders
+
+Ensure visibility in both modes.
+
+---
+
+# 9. Performance Rules
+
+• use CSS animations where possible
+• avoid heavy JavaScript loops
+• keep animations under 300ms where applicable
+• ensure smooth performance on mobile
+
+---
+
+# 10. Micro-Interactions for Loading
+
+Add subtle polish:
+
+• loading bar glow effect
+• smooth progress easing
+• button feedback animations
+
+---
+
+# Expected Final Result
+
+After implementation:
+
+• loading feels smooth and professional
+• users always see feedback during actions
+• no blank screens
+• UI feels fast and responsive
+• works perfectly in Light & Dark mode
+
+The application should feel like a **modern commercial product with polished loading experience**.

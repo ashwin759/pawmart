@@ -1,0 +1,14 @@
+{
+  "venvPath": ".",
+  "venv": ".venv_new",
+  "pythonVersion": "3.12",
+  "pythonPlatform": "Windows",
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": ["."]
+    }
+  ],
+  "reportMissingImports": true,
+  "reportMissingModuleSource": false
+}

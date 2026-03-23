@@ -1,0 +1,383 @@
+# Full Prompt: Redesign UI + Vibrant Color Theme + Light/Dark Mode Optimization
+
+## Objective
+
+Completely upgrade the **Pet Marketplace (PawMart) UI** so it looks like a **professional commercial product** instead of an AI-generated template.
+
+The new design must be:
+
+• visually engaging
+• vibrant and modern
+• emotionally appealing (pet friendly)
+• startup-level professional
+• optimized for **Light Mode and Dark Mode**
+
+Maintain performance, usability, and accessibility.
+
+---
+
+# 1. Redesign the Hero Section
+
+Improve the current hero layout.
+
+Requirements:
+
+• Replace the single centered pet image with **multiple layered pet images**
+• Add subtle gradient shapes in the background
+• Include playful pet-themed visual elements (paw shapes or rounded shapes)
+
+Hero content:
+
+Headline:
+Bring Home Your Perfect Pet Companion
+
+Subtext:
+Discover pets, learn about breeds, and find the perfect companion for your family.
+
+Buttons:
+
+Primary:
+Browse Pets
+
+Secondary:
+Find Your Match
+
+Hero should feel **energetic and welcoming**.
+
+---
+
+# 2. Add a Real Pet Marketplace Section
+
+Immediately after the hero section, add a **pet listing grid**.
+
+Section title:
+
+Popular Pets Available
+
+Each pet card must include:
+
+• real pet image (not AI generated)
+• breed name
+• age
+• price
+• location
+• availability badge
+• quick action button
+
+Example card:
+
+Golden Retriever
+Age: 3 months
+Price: ₹25,000
+Location: Chennai
+Available
+
+Cards must include **hover lift and image zoom effects**.
+
+---
+
+# 3. Add Breed Categories Section
+
+Create a section displaying categories.
+
+Categories:
+
+• Dogs
+• Cats
+• Birds
+• Small Pets
+
+Each category card should include:
+
+• category image
+• title
+• hover animation
+• navigation link
+
+Cards should feel colorful and clickable.
+
+---
+
+# 4. Add Breed Information Section
+
+Create a learning section.
+
+Section title:
+
+Learn About Breeds
+
+Each breed card must include:
+
+• breed image
+• short description
+• origin
+• temperament
+• diet preview
+
+Clicking the card should open a **detailed breed information page**.
+
+---
+
+# 5. Add Recommendation Section
+
+Create a personalized section.
+
+Section title:
+
+Recommended Pets For You
+
+Recommendations should consider:
+
+• similar breeds
+• user search history
+• temperament similarities
+
+Cards must feel visually engaging.
+
+---
+
+# 6. Improve Statistics Section
+
+Replace plain numbers with icon-based stats.
+
+Example layout:
+
+500+ Pets Adopted
+300+ Happy Families
+4.9 Average Rating
+50+ Breeds Available
+
+Use colorful icons and spacing.
+
+---
+
+# 7. Implement a Vibrant Professional Color System
+
+The UI must move away from dull tones and adopt a **vibrant but balanced palette** suitable for a pet marketplace.
+
+Primary Color
+
+Emerald Green
+#22C55E
+
+Secondary Accent Colors
+
+Blue
+#3B82F6
+
+Coral
+#FB7185
+
+Orange
+#F97316
+
+Golden Highlight
+#FACC15
+
+Use accents carefully to maintain a premium feel.
+
+---
+
+# 8. Light Mode Color Configuration
+
+Background
+#F8FAFC
+
+Section Background
+#F1F5F9
+
+Card Background
+#FFFFFF
+
+Primary Text
+#1E293B
+
+Secondary Text
+#475569
+
+Borders
+#E2E8F0
+
+Cards should use **soft shadows and rounded corners**.
+
+---
+
+# 9. Dark Mode Color Configuration
+
+Background
+#0F172A
+
+Section Background
+#111827
+
+Card Background
+#1E293B
+
+Primary Text
+#F1F5F9
+
+Secondary Text
+#CBD5F5
+
+Borders
+#334155
+
+Primary Accent (dark mode)
+
+#4ADE80
+
+Avoid pure black backgrounds to maintain readability.
+
+---
+
+# 10. Add Gradient System
+
+Use subtle gradients for modern appearance.
+
+Hero gradient
+
+linear-gradient(135deg, #22C55E, #3B82F6)
+
+CTA button gradient
+
+linear-gradient(135deg, #22C55E, #FACC15)
+
+Gradients must be **subtle and professional**.
+
+---
+
+# 11. Improve Pet Card Design
+
+Each pet card should include:
+
+• large pet image
+• breed name
+• price badge
+• age badge
+• availability tag
+• action buttons
+
+Hover interaction:
+
+• card lift
+• shadow increase
+• image zoom
+
+Cards must feel lively.
+
+---
+
+# 12. Add Breed Tags
+
+Include colorful tags showing pet traits.
+
+Examples:
+
+Friendly
+Family Dog
+Active
+Low Maintenance
+
+Tags should use accent colors.
+
+---
+
+# 13. Improve Typography Hierarchy
+
+Recommended fonts:
+
+Headings:
+Poppins
+
+Body text:
+Inter
+
+Rules:
+
+• larger section headings
+• slightly bold breed names
+• readable descriptions
+
+Typography must be consistent across the UI.
+
+---
+
+# 14. Improve Image Usage
+
+All pet images must be **real photographs**.
+
+Images should look natural and lively.
+
+Admin panel must allow:
+
+• uploading pet photos
+• managing galleries
+• setting featured images
+
+---
+
+# 15. Add Section Transitions
+
+Avoid flat sections.
+
+Use:
+
+• curved separators
+• subtle gradient transitions
+• spacing variations
+
+This prevents the page from looking like a template.
+
+---
+
+# 16. Maintain Micro-Interactions
+
+Use subtle interactions across UI.
+
+Examples:
+
+• card hover lift
+• button press feedback
+• image zoom on hover
+• smooth page transitions
+• skeleton loading states
+
+Animations should remain smooth and lightweight.
+
+---
+
+# 17. Optimize Light/Dark Mode Switching
+
+Theme toggle must:
+
+• store preference in localStorage
+• transition smoothly (≈300ms)
+• update all UI components automatically
+
+Components affected:
+
+• navigation bar
+• cards
+• buttons
+• forms
+• modals
+• admin dashboard
+
+Ensure **perfect readability in both modes**.
+
+---
+
+# Expected Final Result
+
+After implementing these changes, the application should look like a **real commercial pet marketplace platform**.
+
+The UI must feel:
+
+• vibrant
+• modern
+• engaging
+• emotionally appealing
+• professional
+• startup-quality
+
+The interface should clearly resemble a **real online pet marketplace product**, not an AI-generated template.

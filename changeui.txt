@@ -1,0 +1,297 @@
+# Prompt: Dark Mode Redesign – Professional Black Theme (Pet Marketplace)
+
+## Objective
+
+Redesign the **Dark Mode color system** to use a **deep black / near-black professional theme** that feels:
+
+• premium
+• modern
+• visually comfortable
+• suitable for a pet marketplace
+• perfectly readable
+
+The dark mode must be **fully optimized for text, UI components, and accessibility**.
+
+---
+
+# 1. Dark Mode Design Direction
+
+The current dark mode should be replaced with a **true modern dark theme**, not dull gray.
+
+Use:
+
+• deep black base
+• soft elevated surfaces
+• vibrant accents
+• high readability
+
+Avoid:
+
+• flat gray UI
+• low contrast text
+• overly saturated colors
+
+---
+
+# 2. Core Dark Palette (Black-Based)
+
+## Background
+
+Primary Background
+#020617 (deep black-blue)
+
+Secondary Background
+#020617 or #030712 (layer depth)
+
+---
+
+## Surface / Cards
+
+Card Background
+#0F172A
+
+Elevated Cards
+#111827
+
+Hover Surface
+#1F2937
+
+---
+
+## Borders
+
+Subtle Borders
+#1E293B
+
+Avoid strong borders — use soft separation.
+
+---
+
+# 3. Text Optimization (VERY IMPORTANT)
+
+Text must be highly readable.
+
+Primary Text
+#F8FAFC (almost white)
+
+Secondary Text
+#CBD5F5
+
+Muted Text
+#94A3B8
+
+Disabled Text
+#64748B
+
+Never use low-contrast gray text.
+
+---
+
+# 4. Accent Colors (Vibrant but Controlled)
+
+Primary Accent (Green – pets/nature)
+
+#22C55E
+
+Dark Mode Primary Accent
+
+#4ADE80
+
+---
+
+## Secondary Accents
+
+Blue
+#60A5FA
+
+Coral
+#FB7185
+
+Orange
+#F97316
+
+Yellow
+#FACC15
+
+Use accents for:
+
+• buttons
+• highlights
+• tags
+• hover states
+
+---
+
+# 5. Button Design (Dark Mode)
+
+Primary Button:
+
+• gradient or solid green
+• bright and visible
+
+Example:
+
+background: linear-gradient(135deg, #22C55E, #4ADE80)
+
+---
+
+Hover:
+
+• brightness increase
+• slight glow
+
+Click:
+
+• slight press (scale down)
+
+---
+
+# 6. Card Design Optimization
+
+Cards must stand out clearly in dark mode.
+
+Apply:
+
+• soft elevation
+• subtle shadow
+• slight border
+
+Shadow example:
+
+soft outer glow instead of heavy shadow
+
+---
+
+Hover:
+
+• card lifts slightly
+• shadow/glow increases
+• image zoom effect
+
+---
+
+# 7. Navigation Bar (Dark Mode)
+
+Navbar must feel premium.
+
+Background:
+
+#020617
+
+Add:
+
+• subtle bottom border (#1E293B)
+• slight transparency (optional blur effect)
+
+Text:
+
+• bright and readable
+• active tab highlighted in green
+
+---
+
+# 8. Image Handling in Dark Mode
+
+Images must remain clear and vibrant.
+
+Rules:
+
+• do NOT darken images
+• avoid overlays
+• ensure proper contrast with background
+
+Gallery background:
+
+#020617 or #0F172A
+
+---
+
+# 9. Input Fields & Forms
+
+Inputs must be clearly visible.
+
+Background
+#020617
+
+Border
+#1E293B
+
+Text
+#F8FAFC
+
+Focus state:
+
+• border turns green (#22C55E)
+• subtle glow effect
+
+---
+
+# 10. Tag and Badge Colors
+
+Use vibrant tags to add life.
+
+Examples:
+
+Friendly → #3B82F6
+Active → #F97316
+Family → #22C55E
+Low Maintenance → #A855F7
+
+Tags must remain visible on dark background.
+
+---
+
+# 11. Theme Transition Optimization
+
+Switching between light and dark must feel smooth.
+
+Apply transition to:
+
+• background
+• text
+• cards
+• buttons
+
+Duration:
+
+300ms
+
+Avoid flashing or abrupt changes.
+
+---
+
+# 12. Accessibility Optimization
+
+Ensure dark mode is fully usable.
+
+Requirements:
+
+• high contrast text
+• readable font sizes
+• visible focus states
+• no eye strain
+
+Test readability across all pages.
+
+---
+
+# 13. Performance Guidelines
+
+• Use CSS variables for theme colors
+• Avoid re-rendering entire UI
+• Keep transitions lightweight
+• Optimize shadows and gradients
+
+---
+
+# Expected Final Result
+
+After implementation, dark mode should feel:
+
+• premium black UI (not dull gray)
+• vibrant but controlled
+• easy to read
+• visually engaging
+• professional and commercial
+
+The interface should resemble a **modern production-grade marketplace**, not a basic dark theme.
