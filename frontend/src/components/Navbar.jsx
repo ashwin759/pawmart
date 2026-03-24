@@ -54,7 +54,8 @@ export default function Navbar() {
           )}
 
           {/* Search bar inside mobile menu if open */}
-          <form className="navbar-mobile-search" onSubmit={handleSearch} style={{ display: 'none' }}>
+          <form className="search-bar navbar-mobile-search" onSubmit={handleSearch} style={{ display: 'none' }}>
+             <span className="search-icon">🔍</span>
              <input type="text" className="input" placeholder="Search pets..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
           </form>
 

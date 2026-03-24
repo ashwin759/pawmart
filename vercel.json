@@ -26,5 +26,13 @@
       "src": "/(.*)",
       "dest": "/frontend/index.html"
     }
-  ]
+  ],
+  "functions": {
+    "backend/main.py": {
+      "includeFiles": [
+        "backend/petmarket.db",
+        "backend/uploads/**"
+      ]
+    }
+  }
 }
