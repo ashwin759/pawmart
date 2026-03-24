@@ -54,15 +54,25 @@ export default function Navbar() {
           )}
 
           {/* Search bar inside mobile menu if open */}
-          <form className="navbar-mobile-search" onSubmit={handleSearch} style={{ display: menuOpen ? 'block' : 'none', margin: '10px 16px' }}>
-             <input 
-               type="text" 
-               className="input" 
-               placeholder="Search pets..." 
-               value={searchQuery}
-               onChange={(e) => setSearchQuery(e.target.value)}
-             />
+          <form className="navbar-mobile-search" onSubmit={handleSearch} style={{ display: 'none' }}>
+             <input type="text" className="input" placeholder="Search pets..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
           </form>
+
+          {/* Mobile Auth Links */}
+          <div className="mobile-auth-links" style={{ display: 'none' }}>
+            <Link to="/cart" className="btn btn-outline" onClick={() => setMenuOpen(false)}>🛒 View Cart</Link>
+            {user ? (
+              <>
+                <Link to="/profile" className="btn btn-secondary" onClick={() => setMenuOpen(false)}>👤 Profile</Link>
+                <button className="btn btn-outline" onClick={handleLogout}>Logout</button>
+              </>
+            ) : (
+              <>
+                <Link to="/login" className="btn btn-secondary" onClick={() => setMenuOpen(false)}>Log In</Link>
+                <Link to="/register" className="btn btn-primary" onClick={() => setMenuOpen(false)}>Sign Up</Link>
+              </>
+            )}
+          </div>
         </div>
 
         {/* Desktop Search Bar */}

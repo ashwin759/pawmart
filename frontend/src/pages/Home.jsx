@@ -218,7 +218,7 @@ export default function Home() {
 
       {/* AI Feature */}
       <section className="container section text-center scroll-animate" ref={aiRef}>
-        <div className="card" style={{ padding: '88px 48px', maxWidth: '820px', margin: '0 auto', background: 'var(--hero-gradient)', color: 'white', border: 'none', position: 'relative', overflow: 'hidden' }}>
+        <div className="card ai-banner" style={{ padding: '88px 48px', maxWidth: '820px', margin: '0 auto', background: 'var(--hero-gradient)', color: 'white', border: 'none', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-20%', right: '-10%', width: '300px', height: '300px', background: 'rgba(255,255,255,0.06)', borderRadius: '50%', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-15%', left: '-5%', width: '200px', height: '200px', background: 'rgba(255,255,255,0.04)', borderRadius: '50%', pointerEvents: 'none' }} />
           <div style={{ position: 'relative', zIndex: 1 }}>

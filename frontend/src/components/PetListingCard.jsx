@@ -34,7 +34,7 @@ export default function PetListingCard({ pet }) {
           {pet.availability ? '● Available' : '● Sold'}
         </span>
       </div>
-      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '22px' }}>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '22px', textAlign: 'left' }}>
         <div className="card-title" style={{ fontSize: '1.15rem', marginBottom: '6px' }}>{pet.name}</div>
         <div className="card-subtitle" style={{ fontSize: '0.82rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '6px' }}>
           <span>{pet.breed_name || 'Mixed Breed'}</span>
@@ -49,7 +49,7 @@ export default function PetListingCard({ pet }) {
             </span>
           )}
         </div>
-        <button className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+        <button className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', minHeight: '44px' }}>
           View Details →
         </button>
       </div>
