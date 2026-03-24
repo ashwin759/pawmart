@@ -30,8 +30,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-os.makedirs("uploads", exist_ok=True)
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+if os.environ.get("VERCEL"):
+    import shutil
+    os.makedirs("/tmp/uploads", exist_ok=True)
+    bundled_uploads = os.path.join(os.path.dirname(os.path.abspath(__file__)), "uploads")
+    if os.path.exists(bundled_uploads):
+        for item in os.listdir(bundled_uploads):
+            s = os.path.join(bundled_uploads, item)
+            d = os.path.join("/tmp/uploads", item)
+            if not os.path.exists(d):
+                try:
+                    shutil.copy2(s, d)
+                except Exception:
+                    pass
+    app.mount("/uploads", StaticFiles(directory="/tmp/uploads"), name="uploads")
+else:
+    os.makedirs("uploads", exist_ok=True)
+    app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(pets.router, prefix="/api/pets", tags=["Pets"])
