@@ -60,7 +60,7 @@ async def list_pets(
     query = select(Pet, Breed.name.label("breed_name")).outerjoin(Breed, Pet.breed_id == Breed.id)
 
     if category:
-        query = query.where(Pet.category == category.capitalize())
+        query = query.where(Pet.category.ilike(category))
     if breed_id:
         query = query.where(Pet.breed_id == breed_id)
     if gender:
@@ -96,7 +96,7 @@ async def pets_count(
 ):
     query = select(func.count(Pet.id))
     if category:
-        query = query.where(Pet.category == category.capitalize())
+        query = query.where(Pet.category.ilike(category))
     if breed_id:
         query = query.where(Pet.breed_id == breed_id)
     if gender:

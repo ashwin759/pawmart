@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function HeroSection({ searchQuery, setSearchQuery, handleSearch }) {
   return (
-    <section className="hero" id="hero-section" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', padding: '100px 5% 80px', gap: '48px', position: 'relative' }}>
+    <section className="hero" id="hero-section" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '48px', position: 'relative' }}>
       
       {/* Gradient blobs */}
       <div className="hero-blob hero-blob-1" />
@@ -12,8 +12,8 @@ export default function HeroSection({ searchQuery, setSearchQuery, handleSearch 
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'var(--accent-light)', borderRadius: 'var(--radius-full)', marginBottom: '20px', fontSize: '0.82rem', fontWeight: 600, color: 'var(--accent)' }}>
           <span>✨</span> AI-Powered Pet Marketplace
         </div>
-        <h1 style={{ fontSize: '3.6rem', lineHeight: 1.1 }}>Bring Home Your<br />Perfect Pet Companion</h1>
-        <p style={{ fontSize: '1.12rem', margin: '24px 0 32px', maxWidth: '480px', lineHeight: 1.7, color: 'var(--text-secondary)' }}>
+        <h1>Bring Home Your<br />Perfect Pet Companion</h1>
+        <p style={{ margin: '24px 0 32px', maxWidth: '480px', lineHeight: 1.7, color: 'var(--text-secondary)' }}>
           Discover pets, learn about breeds, and find the perfect companion for your family with AI-powered recommendations.
         </p>
         
@@ -38,13 +38,13 @@ export default function HeroSection({ searchQuery, setSearchQuery, handleSearch 
         </div>
 
         {/* Trust indicators */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '28px', marginTop: '44px' }}>
+        <div className="hero-trust-stats" style={{ display: 'flex', alignItems: 'center', gap: '28px', marginTop: '44px' }}>
           {[
             { number: '500+', label: 'Happy Families' },
             { number: '50+', label: 'Breeds Available' },
             { number: '4.9★', label: 'User Rating' },
           ].map((item, i) => (
-            <div key={i} style={{ textAlign: 'left' }}>
+            <div key={i}>
               <div style={{ fontSize: '1.3rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--accent)' }}>{item.number}</div>
               <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 500 }}>{item.label}</div>
             </div>

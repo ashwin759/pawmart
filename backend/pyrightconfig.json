@@ -3,11 +3,9 @@
   "venv": ".venv_new",
   "pythonVersion": "3.12",
   "pythonPlatform": "Windows",
-  "executionEnvironments": [
-    {
-      "root": ".",
-      "extraPaths": ["."]
-    }
+  "extraPaths": [
+    ".",
+    ".venv_new/Lib/site-packages"
   ],
   "reportMissingImports": true,
   "reportMissingModuleSource": false

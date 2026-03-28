@@ -16,7 +16,7 @@ from typing import Optional
 async def list_breeds(category: Optional[str] = None, db: AsyncSession = Depends(get_db)):
     query = select(Breed).order_by(Breed.name)
     if category:
-        query = query.where(Breed.category == category.capitalize())
+        query = query.where(Breed.category.ilike(category))
     result = await db.execute(query)
     return [BreedOut.model_validate(b) for b in result.scalars().all()]
 

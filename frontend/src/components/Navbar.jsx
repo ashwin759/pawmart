@@ -53,14 +53,14 @@ export default function Navbar() {
             <Link to="/admin" className={isActive('/admin')} onClick={() => setMenuOpen(false)}>Dashboard</Link>
           )}
 
-          {/* Search bar inside mobile menu if open */}
-          <form className="search-bar navbar-mobile-search" onSubmit={handleSearch} style={{ display: 'none' }}>
+          {/* Search bar inside mobile menu — CSS shows this when .navbar-links.open */}
+          <form className="search-bar navbar-mobile-search" onSubmit={handleSearch}>
              <span className="search-icon">🔍</span>
              <input type="text" className="input" placeholder="Search pets..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
           </form>
 
-          {/* Mobile Auth Links */}
-          <div className="mobile-auth-links" style={{ display: 'none' }}>
+          {/* Mobile Auth Links — CSS shows this when .navbar-links.open */}
+          <div className="mobile-auth-links">
             <Link to="/cart" className="btn btn-outline" onClick={() => setMenuOpen(false)}>🛒 View Cart</Link>
             {user ? (
               <>
@@ -76,8 +76,8 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Search Bar */}
-        <form className="search-bar" style={{ display: menuOpen ? 'none' : 'block', maxWidth: '300px' }} onSubmit={handleSearch}>
+        {/* Desktop Search Bar — hidden on mobile via CSS */}
+        <form className="search-bar desktop-only" style={{ maxWidth: '300px' }} onSubmit={handleSearch}>
           <span className="search-icon">🔍</span>
           <input 
             type="text" 
