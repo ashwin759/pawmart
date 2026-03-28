@@ -10,8 +10,12 @@ from app.routes import auth, pets, breeds, diets, orders, search, ai
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    if not os.environ.get("VERCEL"):
+        try:
+            async with engine.begin() as conn:
+                await conn.run_sync(Base.metadata.create_all)
+        except Exception as e:
+            print(f"Lifespan error: {e}")
     yield
 
 
