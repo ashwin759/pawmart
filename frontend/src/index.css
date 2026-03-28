@@ -1696,8 +1696,14 @@ tr:hover td { background: var(--accent-light); }
 .breed-detail-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 40px;
   margin-bottom: 48px;
+}
+
+.breed-detail-header .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .breed-traits {
@@ -2261,6 +2267,9 @@ tr:hover td { background: var(--accent-light); }
   .pet-detail { grid-template-columns: 1fr; gap: 24px; }
   .pet-detail-image { height: 300px; }
   .breed-detail-header { grid-template-columns: 1fr; gap: 24px; }
+  .breed-detail-header .card img { height: 280px; }
+  .breed-detail-header .section-title { font-size: 1.8rem; }
+  .breed-traits { grid-template-columns: 1fr 1fr; }
 
   /* Filter Bar */
   .filter-bar { flex-direction: column; align-items: stretch; }
@@ -2333,4 +2342,30 @@ tr:hover td { background: var(--accent-light); }
     gap: 4px;
   }
   .admin-sidebar a { white-space: nowrap; }
+}
+
+/* ── Aggressive Mobile Overrides to Guarantee Stacking ── */
+@media (max-width: 800px) {
+  .breed-detail-header, .pet-detail {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .breed-detail-header .card, .pet-detail > div:first-child {
+    width: 100% !important;
+  }
+  .breed-detail-header .card img, .pet-detail-image, .pet-placeholder {
+    height: 320px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .grid-2, .grid-3, .grid-4 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .category-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }

@@ -38,19 +38,19 @@ export default function BreedDetail() {
       </div>
       
       {/* Top Section: Gallery & Quick Stats */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '60px' }}>
+      <div className="breed-detail-header">
         {/* Gallery */}
         <div className="card" style={{ overflow: 'hidden', padding: 0, border: 'none', boxShadow: 'var(--shadow-lg)' }}>
            <img 
              src={breed.image_url || 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'} 
              alt={breed.name} 
-             style={{ width: '100%', height: '400px', objectFit: 'cover' }} 
+             style={{ width: '100%', objectFit: 'cover' }} 
            />
         </div>
 
         {/* Info */}
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '16px' }}>{breed.name}</h1>
+          <h1 className="section-title" style={{ marginBottom: '16px' }}>{breed.name}</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '32px', lineHeight: '1.6' }}>{breed.description}</p>
           
           <div className="grid grid-2" style={{ gap: '16px' }}>
@@ -85,7 +85,7 @@ export default function BreedDetail() {
                   <h3 style={{ fontSize: '1.2rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                     🥩 {d.age_group} Diet
                   </h3>
-                  <div className="grid grid-2" style={{ gap: '16px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <div className="info-item" style={{ background: 'var(--bg-primary)' }}>
                       <label>Food Type</label>
                       <span>{d.food_type}</span>
@@ -95,7 +95,7 @@ export default function BreedDetail() {
                       <span>{d.feeding_frequency}</span>
                     </div>
                     {d.water_requirement && 
-                      <div className="info-item" style={{ gridColumn: 'span 2', background: 'var(--bg-primary)' }}>
+                      <div className="info-item" style={{ background: 'var(--bg-primary)' }}>
                         <label>💧 Water Intake</label>
                         <span>{d.water_requirement}</span>
                       </div>
@@ -133,7 +133,7 @@ export default function BreedDetail() {
           <h2 className="section-title">Similar Breeds You May Like</h2>
           <div style={{ display: 'flex', gap: '20px', overflowX: 'auto', padding: '10px 0', scrollSnapType: 'x mandatory' }}>
             {allBreeds.slice(0, 5).map(b => (
-              <Link to={`/breed/${b.id}`} key={b.id} className="card" style={{ minWidth: '300px', flexShrink: 0, textDecoration: 'none', color: 'inherit', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
+              <Link to={`/breed/${b.id}`} key={b.id} className="card" style={{ minWidth: '260px', flexShrink: 0, textDecoration: 'none', color: 'inherit', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ height: '180px', backgroundColor: 'var(--bg-tertiary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>
                   🐕
                 </div>
