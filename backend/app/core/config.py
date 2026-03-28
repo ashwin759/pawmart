@@ -37,8 +37,11 @@ def get_settings():
                 source_db = p
                 break
 
-        if source_db and not os.path.exists(db_path):
+        if source_db:
             try:
+                # Always overwrite in Serverless to heal empty/corrupted databases from bad warm starts
+                if os.path.exists(db_path):
+                    os.remove(db_path)
                 shutil.copy2(source_db, db_path)
             except Exception:
                 pass
