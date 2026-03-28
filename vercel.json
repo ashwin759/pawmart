@@ -1,6 +1,5 @@
 {
   "version": 2,
- 
   "routes": [
     {
       "src": "/api/(.*)",
@@ -17,10 +16,7 @@
   ],
   "functions": {
     "backend/main.py": {
-      "includeFiles": [
-        "backend/petmarket.db",
-        "backend/uploads/**"
-      ]
+      "includeFiles": "{backend/petmarket.db,backend/uploads/**}"
     }
   }
 }
