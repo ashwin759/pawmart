@@ -60,3 +60,14 @@ app.include_router(ai.router, prefix="/api/ai", tags=["AI"])
 @app.get("/api/health")
 async def health_check():
     return {"status": "healthy", "message": "Pet Marketplace API is running"}
+
+import traceback
+from fastapi.responses import JSONResponse
+from fastapi import Request
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    return JSONResponse(
+        status_code=500,
+        content={"message": str(exc), "traceback": traceback.format_exc(), "url": str(request.url)}
+    )
