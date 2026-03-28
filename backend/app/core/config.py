@@ -22,8 +22,22 @@ class Settings(BaseSettings):
 def get_settings():
     if os.environ.get("VERCEL"):
         db_path = "/tmp/petmarket.db"
-        source_db = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "petmarket.db")
-        if not os.path.exists(db_path) and os.path.exists(source_db):
+        
+        # Vercel Lambda working directories vary. We check multiple likely paths:
+        cwd = os.getcwd()
+        possible_sources = [
+            os.path.join(cwd, "backend", "petmarket.db"),
+            os.path.join(cwd, "petmarket.db"),
+            os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "petmarket.db")
+        ]
+        
+        source_db = None
+        for p in possible_sources:
+            if os.path.exists(p):
+                source_db = p
+                break
+
+        if source_db and not os.path.exists(db_path):
             try:
                 shutil.copy2(source_db, db_path)
             except Exception:
